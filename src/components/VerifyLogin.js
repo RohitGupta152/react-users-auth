@@ -47,7 +47,7 @@ const VerifyLogin = () => {
       }
 
       try {
-        const response = await fetch(`http://localhost:5000/api/auth/verify-login/${token}`);
+        const response = await fetch(`https://new-auth-with-admin.vercel.app/api/auth/verify-login/${token}`);
         const data = await response.json();
 
         if (response.ok) {
