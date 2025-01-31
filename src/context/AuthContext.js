@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/profile', {
+      const response = await fetch('https://new-auth-with-admin.vercel.app/api/auth/profile', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
